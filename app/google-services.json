@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "738966435813",
+    "project_id": "tadjir-a8f3c",
+    "storage_bucket": "tadjir-a8f3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738966435813:android:e8e8addd22a83fec9be10c",
+        "android_client_info": {
+          "package_name": "com.amigos.tadjir"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCetj5ZkVv3t-gHzo9_WOxP44gjpdISio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

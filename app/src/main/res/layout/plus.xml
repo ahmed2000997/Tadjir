@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+
+            android:background="@color/colorAccenet"
+            android:scaleType="centerCrop"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/ic_circle"
+            android:elevation="3dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="4dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.887"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.803"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/citytv"
+            android:layout_width="109dp"
+            android:layout_height="51dp"
+
+            android:background="@android:color/transparent"
+            android:hint=""
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.932"
+            tools:ignore="MissingConstraints" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.044" />
+
+        <TextView
+            android:id="@+id/locationET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:hint="Location"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:layout_constraintVertical_bias="0.016" />
+
+        <TextView
+            android:id="@+id/descriptionET"
+            android:layout_width="412dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="72dp"
+            android:background="@android:color/transparent"
+            android:hint="description"
+            android:minLines="12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/locationET"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/prix"
+            android:layout_width="408dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="11dp"
+            android:background="@android:color/transparent"
+            android:hint="prix"
+            android:minLines="12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionET"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="233dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="28dp"
+            android:background="@android:color/transparent"
+            android:hint="tel"
+            android:minLines="12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prix"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="142dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:text="call"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toEndOf="@+id/tel"
+            app:layout_constraintTop_toBottomOf="@+id/prix"
+            app:layout_constraintVertical_bias="0.567"
+            tools:ignore="UnknownId" />
+
+        <Button
+            android:id="@+id/reservation"
+            android:layout_width="404dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="32dp"
+            android:text="booking now"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tel"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            app:layout_constraintBottom_toTopOf="@+id/locationET"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

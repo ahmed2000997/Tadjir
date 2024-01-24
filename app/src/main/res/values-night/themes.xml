@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Tadjir" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorprimary</item>
+        <item name="colorPrimaryDark">@color/colorprimaryDark</item>
+        <item name="colorAccent">@color/colorAccenet</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:textColorHint">@color/colorAccenet</item>
+    </style>
+
+    <!-- Override dark theme for Activities -->
+    <style name="AppTheme" parent="Base.Theme.Tadjir">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Base.Theme.Tadjir" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>
